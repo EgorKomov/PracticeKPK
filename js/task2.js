@@ -11,6 +11,7 @@ function findLongestWord(str) {
 }
 
 console.log('Задача 2');
-const text = "12345 123 1234567";
+const text = "Апельсин Мандарины Ёлка Дом";
 const longest = findLongestWord(text);
-console.log(longest);
+const length = longest.length
+console.log(length);

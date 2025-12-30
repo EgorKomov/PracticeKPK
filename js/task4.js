@@ -3,13 +3,10 @@ function SliceText(str, maxLength) {
         if (maxLength >= 3) {
             return str.slice(0, maxLength - 3) + '...';
         }
-        else {
-            return str.slice(0, maxLength) + '...';
-        }
+        
+        return str.slice(0, maxLength) + '...';
     }
-    else {
-        return str;
-    }
+    return str;
 }
 
 console.log('Задача 4');
