@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class = "Register">
+      <form action="index.html">
+            <h1>Регистрация</h1>
+            <div class="input-box">
+            <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+            <input type="text" placeholder="Name" required>
+            </div>
+            <div class="input-box">
+            <input type="password" id="password" placeholder="Пароль" required>
+            </div>
+            <div class="input-box">
+            <input name="password_confirm" id="psw_confirm" type="password"  placeholder="Повторить пароль" required 
+                oninput="this.setCustomValidity(this.value != document.getElementById('password').value ? 'Пароли не совпадают.' : '')">
+            </div>
+
+            <button type="submit" class="btn">Зарегистрироваться</button>
+            <a href="index.html" class="btn" style="text-decoration: none; display: inline-block; text-align: center;">Вернуться</a>
+      </form>
+    </div>
+  </body>
+</html>

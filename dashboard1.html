@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="board-page">
+    <div id="newListModal" class="modal list-modal">
+        <div class="modal-content">
+            <a href="#" class="close-modal">&times;</a>
+            <h2>Новый список</h2>
+            <div class="input-box">
+                <input type="text" placeholder="Название списка" required>
+            </div>
+            <div class="modal-buttons">
+                <a href="#" class="modal-btn cancel">Отмена</a>
+                <a href="dashboard1.html" class="modal-btn save">Создать</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="newCardModal" class="modal card-modal">
+        <div class="modal-content">
+            <a href="#" class="close-modal">&times;</a>
+            <h2>Новая карточка</h2>
+            <div class="input-box">
+                <input type="text" placeholder="Содержание карточки" required>
+            </div>
+            <div class="modal-buttons">
+                <a href="#" class="modal-btn cancel">Отмена</a>
+                <a href="dashboard1.html" class="modal-btn save">Добавить</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="board-header">
+            <a href="dashboard.html" class="back-btn">← Назад</a>
+            <h1 class="board-title">Моя доска</h1>
+            <a href="index.html" class="logout-btn">Выйти</a>
+        </div>
+
+        <div class="lists-container">
+            <div class="list">
+                <div class="list-header">
+                    <h3 class="list-title">Список 1</h3>
+                </div>
+                
+                <div class="card">
+                    <input type="checkbox" class="card-checkbox" id="card1-1">
+                    <label for="card1-1" class="card-content">Элемент списка 1</label>
+                </div>
+                
+                <div class="card">
+                    <input type="checkbox" class="card-checkbox" id="card1-2">
+                    <label for="card1-2" class="card-content">Элемент списка 2</label>
+                </div>
+                
+                <div class="card">
+                    <input type="checkbox" class="card-checkbox" id="card1-3">
+                    <label for="card1-3" class="card-content">Элемент списка 3</label>
+                </div>
+                
+                <a href="#newCardModal" class="add-card-btn">+ Добавить карточку</a>
+            </div>
+            
+            <div class="list">
+                <div class="list-header">
+                    <h3 class="list-title">Список 2</h3>
+                </div>
+                
+                <div class="card">
+                    <input type="checkbox" class="card-checkbox" id="card2-1">
+                    <label for="card2-1" class="card-content">Элемент списка 4</label>
+                </div>
+                
+                <div class="card">
+                    <input type="checkbox" class="card-checkbox" id="card2-2">
+                    <label for="card2-2" class="card-content">Элемент списка 5</label>
+                </div>
+                
+                <a href="#newCardModal" class="add-card-btn">+ Добавить карточку</a>
+            </div>
+            
+            <div class="add-list-container">
+                <a href="#newListModal" class="add-list-btn">+ Добавить список</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
