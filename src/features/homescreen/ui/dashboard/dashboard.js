@@ -3,6 +3,9 @@ import styles from './style.module.scss'
 export const Dashboard = () => {
     return (
         <>
+        <header>
+            
+        </header>
             <div id="newBoardModal" className={styles.modal}>
                 <div className={styles.modalContent}>
                     <a href="#" className={styles.closeModal}>&times;</a>

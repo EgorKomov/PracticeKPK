@@ -1,6 +1,5 @@
 import styles from './style.module.scss'
 import { Input } from "../../../../shared/ui";
-import { useEffect } from 'react';
 
 
 export const Auth = () => {
