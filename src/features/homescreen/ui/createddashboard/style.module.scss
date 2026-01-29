@@ -1,0 +1,260 @@
+.boardContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+.boardHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.backBtn {
+    padding: 10px 20px;
+    background-color: white;
+    color: #333;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: 600;
+    margin-right: 20px;
+    
+    &:hover {
+        background-color: #f0f0f0;
+    }
+}
+
+.boardTitle {
+    font-size: 36px;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.logoutBtn {
+    padding: 10px 20px;
+    background-color: white;
+    color: #333;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: 600;
+    
+    &:hover {
+        background-color: #f0f0f0;
+    }
+}
+
+.listsContainer {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0 30px 0;
+    min-height: 400px;
+}
+
+.list {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 300px;
+    height: fit-content;
+    border: 2px solid rgb(255, 255, 255, .2);
+}
+
+.listHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.listTitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.cardCheckbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 4px;
+    background: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.cardContent {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.cardCheckbox:checked + .cardContent {
+    text-decoration: line-through;
+}
+
+.addCardBtn {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: 2px dashed rgb(255, 255, 255, .2);
+    border-radius: 40px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-style: solid;
+    }
+}
+
+.addListContainer {
+    min-width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addListBtn {
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px dashed rgb(255, 255, 255, .2);
+    
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-style: solid;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalTarget {
+    display: flex;
+}
+
+.modalContent {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    color: white;
+    border: 2px solid rgb(255, 255, 255, .2);
+    position: relative;
+}
+
+.listModal .modalContent,
+.cardModal .modalContent {
+    width: 350px;
+}
+
+.modalTitle {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputBox {
+    margin: 20px 0;
+}
+
+.inputBox input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+    
+    &::placeholder {
+        color: white;
+    }
+}
+
+.modalButtons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.modalBtn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.modalBtnCancel {
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(255, 255, 255, .2);
+}
+
+.modalBtnSave {
+    background-color: white;
+    color: #333;
+}
+
+.closeModal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}

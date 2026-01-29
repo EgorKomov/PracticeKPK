@@ -1,0 +1,197 @@
+.dashboardContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.headerTitle {
+    font-size: 36px;
+    margin: 0;
+}
+
+.logoutBtn {
+    padding: 10px 20px;
+    background-color: white;
+    color: #333;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: 600;
+    
+    &:hover {
+        background-color: #f0f0f0;
+    }
+}
+
+.newBoardSection {
+    margin-bottom: 30px;
+}
+
+.newBoardBtn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: white;
+    color: #333;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    
+    &:hover {
+        background-color: #f0f0f0;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContent {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    color: white;
+    border: 2px solid rgb(255, 255, 255, .2);
+    position: relative;
+}
+
+.modalTitle {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputBox {
+    margin: 20px 0;
+}
+
+.inputBox input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+    
+    &::placeholder {
+        color: white;
+    }
+}
+
+.modalButtons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.modalBtn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.modalBtnCancel {
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(255, 255, 255, .2);
+}
+
+.modalBtnSave {
+    background-color: white;
+    color: #333;
+}
+
+.closeModal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.boardsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.boardCard {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    height: 150px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgb(255, 255, 255, .2);
+    
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.boardCardTitle {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+}
+
+.boardCardDescription {
+    margin: 0;
+    font-size: 14px;
+}
+
+.boardCard1 { 
+    background-color: rgba(2, 106, 167, 0.7); 
+}
+
+.boardCard2 { 
+    background-color: rgba(0, 121, 191, 0.7); 
+}
+
+.boardCard3 { 
+    background-color: rgba(80, 95, 121, 0.7); 
+}
+
+.boardCard4 { 
+    background-color: rgba(23, 43, 77, 0.7); 
+}
