@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router";
 import { AuthPage } from "../../pages/Auth";
 import { RegPage } from "../../pages/Reg";
 import { DashboardPage } from "../../pages/Dashboard";
-import { CreatedDashboardPage } from "../../pages/CreateDashboard";
+import { CreateDashboardPage } from "../../pages/CreateDashboard";
 import { ENUM_LINK } from "../../shared/constants"
 
 export const routesConfig = createBrowserRouter([
@@ -22,7 +22,7 @@ export const routesConfig = createBrowserRouter([
             },
             {
                 path: ENUM_LINK.CREATEDASHBOARD,
-                element: <CreatedDashboardPage/>
+                element: <CreateDashboardPage/>
             }
         ]
     }

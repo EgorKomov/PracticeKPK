@@ -1,13 +1,14 @@
 body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background: transparent;
-        background: url(./img/1.jpg);
-        background-size: cover;
-        background-position: center;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent;
+    background: url('../../../../shared/assets/img/1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 
     body.dashboard-page,
     body.board-page {

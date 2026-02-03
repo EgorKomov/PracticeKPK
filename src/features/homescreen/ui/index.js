@@ -1,2 +1,2 @@
 export * from './dashboard'
-export * from './createddashboard'
+export * from './create-dashboard'

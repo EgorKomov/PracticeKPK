@@ -1,6 +1,6 @@
-const ENUM_LINK = {
+export const ENUM_LINK = {
     MAIN: '/',
     DASHBOARD: '/dashboard',
     REG: '/register',
-    CREATEDASBOARD: '/create-dashboard'
-}
+    CREATEDASHBOARD: '/create-dashboard'
+};

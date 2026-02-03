@@ -37,7 +37,7 @@ export const Dashboard = () => {
                 </div>
 
                 <div className={styles.boardsGrid}>
-                    <a href="/createddashboard" className={`${styles.boardCard} ${styles.boardCard1}`}>
+                    <a href="/create-dashboard" className={`${styles.boardCard} ${styles.boardCard1}`}>
                         <h3 className={styles.boardCardTitle}>Моя доска</h3>
                         <p className={styles.boardCardDescription}>3 списка</p>
                     </a>

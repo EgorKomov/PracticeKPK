@@ -1,6 +1,6 @@
 import styles from './style.module.scss'
 
-export const CreatedDashboard = () => {
+export const CreateDashboard = () => {
     return (
         <>
             <div id="newListModal" className={`${styles.modal} ${styles.listModal}`}>
