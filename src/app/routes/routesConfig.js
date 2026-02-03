@@ -1,30 +1,27 @@
 import { createBrowserRouter } from "react-router";
-import { AuthPage } from "../../pages/Auth/AuthPage";
-import { RegPage } from "../../pages/Reg/RegPage";
-import { DashboardPage } from "../../pages/Dashboard/DashboardPage";
-import { CreatedDashboardPage } from "../../pages/CreatedDashboard/CreatedDashboardPage";
+import { AuthPage } from "../../pages/Auth";
+import { RegPage } from "../../pages/Reg";
+import { DashboardPage } from "../../pages/Dashboard";
+import { CreatedDashboardPage } from "../../pages/CreateDashboard";
+import { ENUM_LINK } from "../../shared/constants"
 
 export const routesConfig = createBrowserRouter([
     {
         children:[
             {
-                path: '/',
+                path: ENUM_LINK.MAIN,
                 element: <AuthPage/>
             },
             {
-                path: '/test',
-                element: <div>test</div>
-            },
-            {
-                path: '/register',
+                path: ENUM_LINK.REG,
                 element: <RegPage/>
             },
             {
-                path: '/dashboard',
+                path: ENUM_LINK.DASHBOARD,
                 element: <DashboardPage/>
             },
             {
-                path: '/createddashboard',
+                path: ENUM_LINK.CREATEDASHBOARD,
                 element: <CreatedDashboardPage/>
             }
         ]
