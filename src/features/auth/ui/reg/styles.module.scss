@@ -75,3 +75,14 @@
 .btnLink:hover {
     background-color: #f0f0f0;
 }
+
+body:not(.dashboard-page):not(.board-page) {
+    html,
+    body,
+    #root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+}

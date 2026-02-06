@@ -6,11 +6,9 @@ html {
 html,
 body,
 #root {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 *,
@@ -52,4 +50,27 @@ body {
     width: 0.4em;
     height: 0.6em;
     border-radius: 10px;
+}
+
+body.dashboard-page,
+body.board-page {
+    display: block;
+    width: 100%;
+}
+
+.dashboard-container {
+    display: block;
+    width: 100%;
+    padding: 20px;
+}
+
+body.dashboard-page #root,
+body.board-page #root {
+    display: block;
+    width: 100%;
+}
+
+.dashboardContainer {
+    width: 100%;
+    min-height: 100vh;
 }
